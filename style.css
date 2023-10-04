@@ -1,0 +1,311 @@
+#city {
+    background-color: #f2f8fb;
+    padding: 4rem 0;
+}
+
+#city .main-text {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#city .main-text h1 {
+    color: #292b2c;
+    font-size: 2.5rem;
+    padding-bottom: 1.3rem;
+}
+
+#city .main-text p {
+    color: #888888;
+    padding: 0px 1.5rem;
+    font-size: 1rem;
+    margin-bottom: 30px;
+}
+
+#city .card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+#city .card .imgbox .owerlay {
+    position: absolute;
+    width: 100%;
+    height: 250px;
+    background-color: black;
+    opacity: 0;
+    transition: .5s;
+}
+
+#city .card:hover .owerlay {
+    opacity: .5;
+}
+
+#city .card .imgbox {
+    position: relative;
+    transition: .5s;
+    height: 250px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    opacity: 1;
+    overflow: hidden;
+}
+
+#city .card .imgbox .book {
+    width: 100px;
+    height: 50px;
+    position: absolute;
+    left: 38%;
+    top: 0;
+    transition: .5s;
+    opacity: 0;
+    z-index: 999;
+}
+
+#city .card .imgbox .book a {
+    padding: 10px;
+    position: absolute;
+    background-color: red;
+    color: white;
+}
+
+#city .card:hover .book {
+    top: 42%;
+    opacity: 1;
+    z-index: 9999;
+}
+
+#city .card .imgbox img {
+    width: 100%;
+    height: 100%;
+}
+
+#city .card:hover a {
+    z-index: 99;
+}
+
+#city .card .card-info {
+    padding: 20px;
+}
+
+#city .card .card-info h1 {
+    font-size: 2.5rem;
+}
+
+#city .card .card-info p {
+    margin: 20px 0px;
+    font-size: 14px;
+}
+
+#city .card .card-info .reyting {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#city .card .card-info .reyting ul {
+    display: flex;
+}
+
+#city .card .card-info .reyting span {
+    color: #ff7a58;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+#city .card .card-info .card-text {
+    padding-bottom: 25px;
+    border-bottom: 1px solid grey;
+}
+
+#city .card .card-info .reyting ul {
+    display: flex;
+}
+
+#city .card .card-info .reyting ul li {
+    margin-right: 5px;
+}
+
+#city .card .card-info .reyting ul li i {
+    font-size: .8rem;
+    color: rgb(255, 196, 0);
+}
+
+#city .card .card-info .reyting .p {
+    color: grey;
+    font-size: 15px;
+    padding-bottom: 5px;
+}
+
+#city .box-head {
+    display: flex;
+}
+
+#city .buttonall {
+    width: 200px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+#city .buttonall button {
+    width: 100%;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    background-color: #ed4a28;
+    transition: .5s;
+}
+#city .buttonall button i{
+    font-size: 15px;
+    color: white    ;
+}
+#city .buttonall button a{
+    margin-right: 10px;
+}
+
+#city .buttonall:hover button {
+    transform: scale(0.8);
+    background-color: #cf4023;
+}
+
+#city .buttonall a {
+    font-size: 20px;
+    color: white;
+}
+
+#services {
+    padding: 4rem 0rem;
+}
+
+#services .main-text {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#services .main-text h1 {
+    color: #292b2c;
+    font-size: 2.5rem;
+    padding-bottom: 1.3rem;
+}
+
+#services .main-text p {
+    color: #888888;
+    padding: 0px 1.5rem;
+    font-size: 1rem;
+    margin-bottom: 30px;
+}
+
+#services .icon {
+    width: 80px;
+    height: 80px;
+    border: 2px solid #fd5a38;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#services .icon i {
+    font-size: 25px;
+    color: #fd5a38;
+}
+
+/* bu hisseni yigarken hansi usulla yigilib inspectde baxdim qalani ozum yazdim */
+#services .icon::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    transform: scale(0);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+
+#services .icon:hover::before {
+    background: #fd5a38;
+    transform: scale(0.8);
+}
+
+#services .icon:hover i {
+    color: white;
+    z-index: 99;
+}
+
+/* bura qeder */
+#services .service-text {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#services .service-text h3 {
+    margin: 20px 0px;
+    font-size: 2rem;
+}
+
+#services .service-text p {
+    font-size: 1rem;
+    color: grey;
+}
+
+@media (max-width: 640px) {
+    #city .main-text {
+        width: 100%;
+    }
+
+    #city .main-text h1 {
+        font-size: 1.5rem;
+    }
+
+    #services .service-text p {
+        display: none;
+    }
+    #services .main-text {
+        width: 80%;
+    }
+
+    #seervices .main-text p {
+        font-size: .8rem;
+    }
+    #city .card .card-info p{
+        margin: 10px 0px;
+    }
+    
+}
+
+@media only screen and (min-width:640px) and (max-width:768px) {
+    #city .main-text {
+        width: 80%;
+    }
+
+    #city .main-text p {
+        font-size: .8rem;
+    }
+
+    #services .service-text p {
+        display: none;
+    }
+}
+
+@media only screen and (min-width:768px) and (max-width:998px) {
+    #city .main-text {
+        width: 80%;
+    }
+
+    #city .main-text p {
+        font-size: .8rem;
+    }
+    #services .main-text {
+        width: 80%;
+    }
+
+    #seervices .main-text p {
+        font-size: .8rem;
+    }
+}
